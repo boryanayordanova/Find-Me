@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appl="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <item
+        android:id="@+id/show_all_friends"
+        android:icon="@drawable/ic_all_out_white_48dp"
+        android:title="Show All Friends"
+        appl:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings_white_48dp"
+        android:title="Settings"
+        appl:showAsAction="always"/>
+
+
+    
+
+</menu>

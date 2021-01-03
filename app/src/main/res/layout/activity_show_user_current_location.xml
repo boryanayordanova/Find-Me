@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.boryana.android.phpmyadmindatabase.ShowUserCurrentLocationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FRIEND NAME"
+        android:textStyle="bold|italic"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/chosenFriendName"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DISTANCE NAME"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:id="@+id/chosenFriendDistance"
+        android:layout_below="@+id/chosenFriendName"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/chosenFriendDate"
+        android:layout_marginRight="3dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATE NAME"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:id="@+id/chosenFriendDate"
+        android:layout_below="@+id/chosenFriendName"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <fragment
+        android:id="@+id/map_chosen_friend"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/chosenFriendDistance"
+
+        />
+</RelativeLayout>

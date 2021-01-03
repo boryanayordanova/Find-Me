@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.boryana.android.phpmyadmindatabase.SettingsActivity"
+    android:background="@color/colorYellow">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fieldsChangePass"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Смяна на парола"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true" />
+
+        <EditText
+            android:id="@+id/changePassOne"
+            android:hint="Нова парола"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:layout_marginTop="25dp"
+            android:inputType="textPassword"
+            android:maxLength="15"/>
+
+
+        <EditText
+            android:id="@+id/changePassTwo"
+            android:hint="Потвърдете паролата"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:singleLine="true" />
+
+
+        <Button
+            android:text="Смени парола"
+            android:id="@+id/btnChangePassword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/decoration_button"
+            android:textColor="@color/colorYellow"
+            android:height="14dp"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:text="Изход"
+        android:id="@+id/buttonLogout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/decoration_button"
+        android:textColor="@color/colorYellow"
+        android:height="14dp"
+        android:textSize="15sp"
+        android:layout_below="@+id/fieldsChangePass"
+        />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarChangePassword"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/colorPrimary"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

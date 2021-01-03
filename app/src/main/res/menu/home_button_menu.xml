@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appl="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_close_acivity"
+        android:icon="@drawable/ic_home_white_36dp"
+        android:title="GoHome"
+        appl:showAsAction="always"/>
+
+
+</menu>

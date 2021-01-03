@@ -1,0 +1,100 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYellow"
+    tools:context=".RegisterActivity"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/inputFieldsLaoyotRegister">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Регистрация"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputFieldsLaoyotRegister"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Потребителско име"
+            android:id="@+id/new_user_name"
+            android:singleLine="true"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:maxLength="30"
+            />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Парола"
+            android:id="@+id/new_user_pass1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Повторете паролата"
+            android:id="@+id/new_user_pass2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:maxLength="15"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/inputFieldsLaoyotRegister">
+
+
+        <Button
+            android:text="Регистрирай"
+            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/decoration_button"
+            android:textColor="@color/colorYellow"
+            android:id="@+id/buttonDoRegistration"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarRegister"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/colorPrimary"
+        android:visibility="gone"/>
+
+</RelativeLayout>

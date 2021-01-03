@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Find me</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_app_id">smooth-rain-132319</string>
+    <string name="title_activity_m">Map</string>
+
+    <string name="base_url">http://boryana.comxa.com/android/</string>
+
+    <string name="login">register.php</string>
+    <string name="title_activity_main_screen">Map</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+</resources>

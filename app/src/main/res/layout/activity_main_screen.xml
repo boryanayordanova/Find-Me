@@ -1,0 +1,76 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.boryana.android.phpmyadmindatabase.MainScreenActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/layoutHeaderRequests"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonShowRequestActivity"
+            android:text="You have (place number) new friend reuqests."
+            android:background="@color/colorYellow"/>
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutHeaderRequests"
+        android:layout_above="@+id/layoutFooterMenu"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/layoutFooterMenu"
+        android:layout_alignParentBottom="true"
+
+        >
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btnUsersSubMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/view"
+            android:layout_alignTop="@+id/hello"
+            android:text="Приятели"
+            android:textColor="@color/colorYellow"
+            android:background="@drawable/decoration_button"
+            />
+
+
+
+        <Button
+            android:id="@+id/btnRepostsSubMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/hello"
+            android:layout_toRightOf="@+id/view"
+            android:text="Справка"
+            android:textColor="@color/colorYellow"
+            android:background="@drawable/decoration_button"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
